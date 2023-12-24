@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+.webBody{
+    height: 100vh;
+    display: flex;
+    
+}
+.d-flex{
+    display: flex;
+}
+.row{
+    flex-wrap: wrap;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.justify-content-end{
+    justify-content: end; 
+}
+.justify-space-around{
+    justify-content: space-around; 
+}
+.align-item-center{
+    align-items: center;
+}
+.w-1{
+    width: 100%;
+}
+.w-2{
+    width: 50%;
+}
+.w-80{
+    width: 80%;
+}
+.w-10{
+    width: 10%;
+}
+.border{
+    border: 1px solid rgb(255, 255, 255);
+    margin: 8px;
+}
+/* topcontent  */
+.topcontent{
+    padding: 50px 40px;
+}
+/* questinBox  */
+.questinBox{
+    height: 100%;
+}
+/* optionsBox */
+/* --button--  */
+.optionsBox{
+    height: 100%;
+    padding: 70px;
+}
+.nextButton{
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    border: transparent;
+    background-color: rgb(18, 18, 18);
+    font-size: 15px;
+    /* font-weight: 600; */
+    transition: all .2s linear;
+}
+.nextButton:hover , .option-1:hover ,.option-2:hover ,.option-3:hover ,.option-4:hover {
+    color: black;
+    background-color: rgb(241, 241, 241);
+}
+/* --options-- */
+.options{
+    height: 100%;
+    align-content: space-evenly;
+}
+.options button{
+    height: 80px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: transparent;
+}
+.option-1:focus ,.option-2:focus ,.option-3:focus ,.option-4:focus {
+    background-color: rgb(241, 241, 241);
+    color: black;
+}
+.option-1 , .option-3{
+    margin-right: 10px;
+    transition: all .2s linear;
+    font-weight: 600;
+}
+.option-2 , .option-4{
+    margin-left: 10px;
+    font-weight: 600;
+    transition: all .2s linear;
+}
+.mainBody{
+    display: none;
+}
+.startButton{
+    padding: 50px 70px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(18, 18, 18);
+    transition: all .2s linear;
+    animation: buttonColor 2s linear infinite;
+}
+@keyframes buttonColor{
+    0%{
+        background-color: rgb(18, 18, 18);
+    }
+    50%{
+        background-color: rgb(73, 73, 73);
+    }
+    100%{
+        background-color: rgb(18, 18, 18);
+    }
+}
+.startBody{
+    height: 100vh;
+}
+.resultPage{
+    display: none;
+}
+.result{
+    height: 100vh;
+    width: 100%;
+}
+ul{
+    height: 100%;
+}
+li{
+    list-style: none;
+    margin: 0;
+}
+.result .box{
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgb(48, 48, 48);
+}
+.result .box h3{
+    text-align: center;
+}
